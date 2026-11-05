@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sicherheitslücke melden
+    url: https://github.com/7H3-CH053N/RockerMail-Beta/security/advisories/new
+    about: Vertraulich, nur für dich und uns sichtbar. Bitte nicht als öffentliches Issue.
+  - name: Kein GitHub-Konto? Per Mail melden
+    url: mailto:aj@medienwerk.cc?subject=RockerMail%20Beta
+    about: Wir übertragen deine Meldung hierher.
+  - name: Für die Beta eintragen
+    url: https://rockermail.app/#beta
+    about: Einladung zur Testversion

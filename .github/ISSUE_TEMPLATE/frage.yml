@@ -1,0 +1,17 @@
+name: Frage stellen
+description: Du weißt nicht, wie etwas geht, oder bist unsicher, ob es ein Fehler ist.
+title: "[Frage] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: frage
+    attributes:
+      label: Deine Frage
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version von RockerMail
+      description: RockerMail → Über RockerMail
+      placeholder: "0.1.0"

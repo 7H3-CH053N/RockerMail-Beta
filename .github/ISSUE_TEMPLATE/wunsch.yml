@@ -1,0 +1,28 @@
+name: Wunsch einreichen
+description: Eine Funktion fehlt dir oder könnte besser sein.
+title: "[Wunsch] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Schau bitte kurz in die offenen Meldungen, ob es den Wunsch schon gibt. Dann reicht ein 👍 dort.
+  - type: textarea
+    id: situation
+    attributes:
+      label: In welcher Situation fehlt dir etwas?
+      placeholder: Ich bekomme jeden Montag denselben Bericht und lege ihn jedes Mal von Hand im Ordner „Berichte“ ab.
+    validations:
+      required: true
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Was würde dir helfen?
+      placeholder: Eine Regel, die Mails von einem bestimmten Absender automatisch in einen Ordner verschiebt.
+    validations:
+      required: true
+  - type: textarea
+    id: vergleich
+    attributes:
+      label: Kennst du das aus einer anderen App?
+      description: Optional

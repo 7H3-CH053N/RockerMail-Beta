@@ -1,0 +1,119 @@
+name: Fehler melden
+description: Etwas funktioniert nicht oder anders als erwartet.
+title: "[Fehler] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Dieses Repository ist öffentlich.** Bitte keine echten Mails, Mailadressen, Namen, Termine, Passwörter oder Schlüssel. Schwärze Screenshots vorher.
+  - type: input
+    id: version
+    attributes:
+      label: Version von RockerMail
+      description: RockerMail → Über RockerMail
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: Version von macOS
+      description: " → Über diesen Mac"
+      placeholder: "26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: chip
+    attributes:
+      label: Mac
+      options:
+        - Apple-Chip (M1 oder neuer)
+        - Intel
+        - weiß ich nicht
+    validations:
+      required: true
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      options:
+        - Installation oder Freischalten
+        - Konto hinzufügen oder anmelden
+        - Mail lesen
+        - Mail schreiben oder senden
+        - Ordner, Verschieben, Archivieren
+        - Suche
+        - Kalender
+        - Kontakte
+        - Aufgaben
+        - Heute
+        - Schnellstart
+        - KI-Assistent oder Schreibhilfe
+        - Einstellungen oder Farben
+        - anderes
+    validations:
+      required: true
+  - type: checkboxes
+    id: konten
+    attributes:
+      label: Betroffene Konten
+      description: Falls der Fehler mit einem Konto zu tun hat.
+      options:
+        - label: Microsoft 365 oder Exchange Online
+        - label: Gmail oder Google Workspace
+        - label: iCloud
+        - label: anderes IMAP-Konto
+  - type: dropdown
+    id: ki
+    attributes:
+      label: KI-Weg
+      description: Falls der Fehler mit der KI zu tun hat.
+      options:
+        - hat nichts mit der KI zu tun
+        - Claude
+        - Ollama (lokal)
+        - Apple-Modell (lokal)
+  - type: textarea
+    id: passiert
+    attributes:
+      label: Was ist passiert?
+      placeholder: Beim Klick auf „Archivieren“ verschwindet die Mail, taucht nach dem nächsten Abruf aber wieder im Posteingang auf.
+    validations:
+      required: true
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Schritte zum Nachstellen
+      placeholder: |
+        1. Posteingang des Gmail-Kontos öffnen
+        2. Eine Mail auswählen
+        3. Auf „Archivieren“ klicken
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was hast du erwartet?
+    validations:
+      required: true
+  - type: dropdown
+    id: haeufigkeit
+    attributes:
+      label: Wie oft passiert das?
+      options:
+        - jedes Mal
+        - manchmal
+        - einmal
+  - type: textarea
+    id: anhang
+    attributes:
+      label: Screenshots oder Bildschirmaufnahme
+      description: Hier hineinziehen. Vorher private Inhalte schwärzen.
+  - type: checkboxes
+    id: privat
+    attributes:
+      label: Datenschutz
+      options:
+        - label: Meine Meldung enthält keine echten Mails, Mailadressen, Namen, Passwörter oder Schlüssel.
+          required: true
