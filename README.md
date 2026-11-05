@@ -42,7 +42,7 @@ Das hilft uns am meisten:
 
 **Dieses Repository ist öffentlich.** Alles, was du hier schreibst oder hochlädst, kann jeder lesen. Bitte keine echten Mails, Mailadressen, Namen, Termine, Passwörter oder Schlüssel. Schwärze Screenshots vorher oder nimm eine Testmail. Falls doch etwas Privates hineinrutscht, schreib uns, dann löschen wir es.
 
-Kein GitHub-Konto? Schick die Meldung per Mail an [aj@medienwerk.cc](mailto:aj@medienwerk.cc?subject=RockerMail%20Beta), wir übertragen sie.
+Kein GitHub-Konto? Schick die Meldung per Mail an [alex@promptrocker.at](mailto:alex@promptrocker.at?subject=RockerMail%20Beta), wir übertragen sie.
 
 ## Wünsche und Fragen
 
